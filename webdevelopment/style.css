@@ -1,0 +1,43 @@
+
+body {
+    background-color: #FFFFF5;
+    margin: 0;
+
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    background-color: #FFFFF5;
+    font-size: 36px;
+        color: #313335;
+}
+
+p {
+    font-family: 'Noto Serif' serif;
+    background-color: #313335;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+        color: #FFFFF5;
+
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    background-color: #FFFFF5;
+    font-size: 25px;
+        color: #313335;
+}
+
+
+blockquote {
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    background-color: #D5E5E6;
+    margin: 0;
+    width: 100%;
+    padding: 50px;
+    font-size: 20px;
+    color: #313335;
+}
+
