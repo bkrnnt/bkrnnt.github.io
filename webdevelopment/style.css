@@ -1,9 +1,10 @@
 
 body {
-    background-color: #FFFFF5;
     margin: 0;
-
+    padding: 0;
+    background-color: #FFFFF5;
 }
+
 
 h1 {
     font-family: 'Oswald', sans-serif;
@@ -34,6 +35,55 @@ blockquote {
     font-family: 'Oswald', sans-serif;
     font-style: italic;
     background-color: #D5E5E6;
+    margin: 0;
+    width: 100%;
+    padding: 50px;
+    font-size: 20px;
+    color: #313335;
+}
+
+.hero {
+  background-image: url("images/background.jpg");
+  background-size: cover; /*fill screen*/
+  background-position: 70% center; /*move image to the right*/
+  background-repeat: no-repeat;
+  display: flex;                
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFF5;
+}
+.hero h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #FFFFF5;
+  margin-top: 500px;
+  background: none; /* remove previous background color */
+}
+
+.hero p {
+    font-family: 'Noto Serif' serif;
+    font-size: 20px;
+        color: #FFFFF5;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 400px;
+    background: none;
+}
+
+.hero button {
+    background-color: #FFFFF5;
+    padding: 12px 12px;
+    margin-bottom: 30px;
+}
+
+.hero button:hover {
+    background-color: #D5E5E6;
+}
     margin: 0;
     width: 100%;
     padding: 50px;
