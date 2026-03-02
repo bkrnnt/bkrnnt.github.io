@@ -43,8 +43,6 @@ blockquote {
 }
 
 .hero {
-  background-color: black;
-  color: white;
   min-height: 400px;
   background-image: url("images/background.jpg");
   background-size: cover; /*fill screen*/
