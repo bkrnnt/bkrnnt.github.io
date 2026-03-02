@@ -26,6 +26,7 @@ p {
 h3 {
     font-family: 'Oswald', sans-serif;
     background-color: #FFFFF5;
+    padding-left: 10px;
     font-size: 25px;
         color: #313335;
 }
@@ -44,7 +45,8 @@ blockquote {
 
 .hero {
   min-height: 400px;  
-  width: 110%;
+  width: 100%;
+  padding: 20px;
   background-image: url('https://bkrnnt.github.io/webdevelopment/background.jpg');
   background-size: cover; /*fill screen*/
   background-position: 70% center; /*move image to the right*/
