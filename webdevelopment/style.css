@@ -43,6 +43,9 @@ blockquote {
 }
 
 .hero {
+  background-color: black;
+  color: white;
+  min-height: 400px;
   background-image: url("images/background.jpg");
   background-size: cover; /*fill screen*/
   background-position: 70% center; /*move image to the right*/
@@ -84,10 +87,3 @@ blockquote {
 .hero button:hover {
     background-color: #D5E5E6;
 }
-    margin: 0;
-    width: 100%;
-    padding: 50px;
-    font-size: 20px;
-    color: #313335;
-}
-
