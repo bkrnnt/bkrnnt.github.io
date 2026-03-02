@@ -14,7 +14,7 @@ h1 {
 }
 
 p {
-    font-family: 'Noto Serif' serif;
+    font-family: 'Noto Serif', serif;
     background-color: #313335;
     width: 100%;
     padding: 20px;
@@ -43,7 +43,6 @@ blockquote {
 }
 
 .hero {
-  min-height: 400px;
   width: 110%;
   background-image: url('https://bkrnnt.github.io/webdevelopment/background.jpg');
   background-size: cover; /*fill screen*/
@@ -75,10 +74,7 @@ blockquote {
     padding-right: 50px;
     max-width: 300px;
     background: black;
-        padding-left: 2px;
-        padding-right: 2px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding: 5px 2px 5px 2px;
 }
 
 .hero button {
