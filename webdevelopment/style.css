@@ -67,7 +67,7 @@ blockquote {
 }
 
 .hero p {
-    font-family: 'Noto Serif' serif;
+    font-family: 'Noto Serif', serif;
     font-size: 20px;
         color: #FFFFF5;
     margin-top: 10px;
@@ -88,4 +88,18 @@ blockquote {
 
 .hero button:hover {
     background-color: #D5E5E6;
+}
+
+.Resume a {
+    padding: 20px;
+    margin: 20px;
+    border-style: double;
+    border-width: 2px;
+    border-color: #313335;
+    border-radius: 10px;
+    background-color: #D5E5E6;
+    color: #313335;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    text-decoration: none;
 }
