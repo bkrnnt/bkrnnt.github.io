@@ -44,7 +44,7 @@ blockquote {
 
 .hero {
   min-height: 400px;
-  background-image: url("background.jpg");
+  background-image: url("webdevelopment/background.jpg");
   background-size: cover; /*fill screen*/
   background-position: 70% center; /*move image to the right*/
   background-repeat: no-repeat;
