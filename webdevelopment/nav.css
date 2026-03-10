@@ -1,0 +1,53 @@
+header {
+    display: flex;  /* Use flexbox to arrange logo & nav horizontally */
+    align-items: center;  /* Vertically center items in header */
+    gap: 10px; /* Space between flex items */
+}
+
+body{
+    margin: 0px;
+    padding-bottom: 0px;
+    background-color: #313335;
+}
+
+.logo {
+    display: block; /* Makes image behave like block element */
+    width: 60px;
+    height: auto;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.navbar {
+    padding: 5px 0;
+}
+
+.navbar ul{
+    display: flex; /* Flexbox for horizontal menu items */
+    list-style-type: none; /* Remove default bullets from list */
+    gap: 5px; 
+    background-color: #313335;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar a{
+    color: #FFFFF5;
+    text-decoration: none; /* Removes default underline */
+    padding: 20px;
+    display: block;
+    text-align: center;
+    margin: 0%;
+    font-family: 'Noto Serif', serif;
+    font-size: 25px;
+}
+
+.navbar a:hover{
+    background-color: #28292b;
+    text-decoration: underline; /* Add underline on hover */
+    text-underline-offset: 5px; /* Push underline slightly away from text */
+}
+
