@@ -1,7 +1,6 @@
 header {
     display: flex;  /* Use flexbox to arrange logo & nav horizontally */
     align-items: center;  /* Vertically center items in header */
-    gap: 10px; /* Space between flex items */
 }
 
 body{
@@ -12,23 +11,27 @@ body{
 
 .logo {
     display: block; /* Makes image behave like block element */
-    width: 60px;
+    width: 80px;
     height: auto;
     margin: 0;
 }
 
 h1{
     text-align: center;
+    margin: 0;
 }
 
 .navbar {
     padding: 5px 0;
+    flex: 1;
 }
 
 .navbar ul{
     display: flex; /* Flexbox for horizontal menu items */
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
     list-style-type: none; /* Remove default bullets from list */
-    gap: 5px; 
     background-color: #313335;
     padding: 0px;
     margin: 0px;
