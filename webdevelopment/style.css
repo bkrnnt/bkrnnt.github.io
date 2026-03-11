@@ -3,15 +3,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FFFFF5;
+    width: 100%;
 }
 
 
 h1 {
     font-family: 'Oswald', sans-serif;
     background-color: #FFFFF5;
+    width: 100%;
+    padding: 20px;
     font-size: 36px;
         color: #313335;
 }
+
+
 
 p {
     font-family: 'Noto Serif', serif;
@@ -23,10 +28,29 @@ p {
 
 }
 
+p::first-letter{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p:nth-of-type(odd) {
+    text-indent: 40px;
+}
+
+h2{
+       font-family: 'Oswald', sans-serif;
+    background-color: #FFFFF5;
+    padding: 25px;
+    width: 100%;
+    font-size: 25px;
+        color: #313335;
+}
+
 h3 {
     font-family: 'Oswald', sans-serif;
     background-color: #FFFFF5;
-    padding-left: 10px;
+    padding: 25px;
+    width: 100%;
     font-size: 25px;
         color: #313335;
 }
@@ -106,8 +130,10 @@ blockquote {
 
 ul {
     list-style-type: square;
-    margin: 20px;
-    padding: 10px;
+    margin: 0px;
+    background-color: #FFFFF5;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 li {
@@ -120,4 +146,35 @@ li {
 li:hover {
     color: dimgray;
     background-color: #FFFFF5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.reflection-box {
+    border: 5px solid #D5E5E6;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #313335;
+}
+
+.reflection-box h2 {
+    font-family: 'Oswald', sans-serif;
+    background-color: #FFFFF5;
+    padding: 20px;
+    width: 100%;
+    font-size: 25px;
+        color: #313335;
+}
+
+.reflection-box p,
+.reflection-box h1,
+.reflection-box h3 {
+    background: none;
+    width: 100%;
+    padding: 20px;
+    margin: 0 0 15px 0;
 }
