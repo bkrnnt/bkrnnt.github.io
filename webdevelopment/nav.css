@@ -3,11 +3,6 @@ header {
     align-items: center;  /* Vertically center items in header */
 }
 
-body{
-    margin: 0px;
-    padding-bottom: 0px;
-    background-color: #313335;
-}
 
 .logo {
     display: block; /* Makes image behave like block element */
