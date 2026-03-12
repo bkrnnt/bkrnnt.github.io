@@ -22,7 +22,7 @@ h1{
 }
 
 nav {
-    flex: 1;
+    flex: 1; /* Allows nav to take remaining horizontal space in the header */
 }
 
 nav ul {
@@ -30,22 +30,22 @@ nav ul {
     margin: 0;
     padding: 0;
     background-color: #313335;
-    display: flex;
+    display: flex; /* Displays menu items in a horizontal row */
     align-items: center;
 }
 
 nav > ul > li {
-    position: relative;
+    position: relative; /* Needed so dropdown menu position is relative to this item */
     text-align: center;
     font-family: 'Noto Serif', serif;
     font-size: 25px;
     margin: 0;
-    flex: 1;
+    flex: 1; /* Makes each menu item equal width */
 }
 
 nav > ul > li > a {
-    text-decoration: none;
-    display: block;
+    text-decoration: none; /* Removes underline */
+    display: block; /* Makes entire menu area clickable */
     width: 100%;
     padding: 20px;
     background-color: #313335;
@@ -56,18 +56,18 @@ nav > ul > li > a {
 nav > ul > li > a:hover {
     background-color: #28292b;
     text-decoration: underline;
-    text-underline-offset: 5px;
+    text-underline-offset: 5px; /* Moves underline slightly below text */
 }
 
 nav ul > li > ul {
-    position: absolute;
+    position: absolute; /* Positions dropdown relative to parent menu item */
     top: 100%;
     left: 0;
     display: none;
     background-color: #313335;
     width: 200px;
     text-align: left;
-    z-index: 100;
+    z-index: 100; /* Makes sure dropdown apprears above other elements */
     padding: 0;
     margin: 0;
 }
@@ -77,11 +77,11 @@ nav ul > li > ul > li {
 }
 
 nav > ul > li:hover > ul {
-    display: block;
+    display: block; /* Reveals dropdown menu */
 }
 
 nav ul > li > ul > li > a {
-    display: block;
+    display: block; /* Makes entire dropdown clickable */
     padding: 10px 20px;
     color: #FFFFF5;
     text-decoration: none;
