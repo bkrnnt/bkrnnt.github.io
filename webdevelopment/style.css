@@ -179,7 +179,7 @@ li:hover {
     margin: 0 0 15px 0;
 }
 
-.Headshot img {
+.headshot img {
     width: 300px;
     height: auto;
     border: 4px solid #FFFFF5;
@@ -189,7 +189,7 @@ li:hover {
     margin-right: auto;
 }
 
-.Resume-Video video {
+.eesume-video video {
     display: block;
     margin: 20px auto;
     width: 300px;
