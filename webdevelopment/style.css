@@ -191,8 +191,8 @@ li:hover {
 
 .video-wrapper {
     margin: 20px auto !important; /* Center video */
-    width: 300px !important;
-    height: 400px !important;
+    width: 400px !important;
+    height: 500px !important;
     border-radius: 10px !important; /* Rounded corners */
     border: 4px solid #FFFFF5 !important;
     overflow: hidden; /* Clips content to respect border-radius in Safari */
