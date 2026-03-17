@@ -184,20 +184,20 @@ li:hover {
     height: auto;
     border: 4px solid #FFFFF5;
     border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: block; /* Make image a block element to allow for auto centering */
+    margin-left: auto; /* Center image */
+    margin-right: auto; /* Center image */
 }
 
 .video video {
-    display: block !important;
-    margin: 20px auto !important;
+    display: block !important; /* Ensure video is block element */
+    margin: 20px auto !important; /* Center video */
     width: 300px !important;
     height: 200px !important;
-    border-radius: 10px !important;
+    border-radius: 10px !important; /* Rounded corners */
     border: 4px solid #FFFFF5 !important;
     border-radius: 10px !important;
-    overflow: hidden;
+    overflow: hidden; /* Clips content to respect border-radius in Safari */
 }
 
 .video-wrapper video {
