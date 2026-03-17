@@ -193,8 +193,15 @@ li:hover {
     display: block !important;
     margin: 20px auto !important;
     width: 300px !important;
-    height: auto !important;
+    height: 200px !important;
     border-radius: 10px !important;
     border: 4px solid #FFFFF5 !important;
     border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
