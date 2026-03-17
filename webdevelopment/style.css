@@ -179,7 +179,7 @@ li:hover {
     margin: 0 0 15px 0;
 }
 
-img {
+.headshot {
     width: 300px;
     height: auto;
     border: 4px solid #FFFFF5;
@@ -189,7 +189,7 @@ img {
     margin-right: auto;
 }
 
-video {
+.resume-video {
     display: block;
     margin: 20px auto;
     width: 300px;
