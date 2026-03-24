@@ -37,6 +37,25 @@ p:nth-of-type(odd) {
     text-indent: 40px;
 }
 
+footer p {
+    font-family: 'Noto Serif', serif;
+    background-color: #313335;
+    width: 100%;
+    padding: 30px;
+    font-size: 18px;
+        color: #FFFFF5;
+    margin-left: 20px;
+}
+
+footer p::first-letter {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+footer p:nth-of-type(odd) {
+    text-indent: 0px;
+}
+
 h2{
        font-family: 'Oswald', sans-serif;
     background-color: #FFFFF5;
@@ -311,6 +330,14 @@ li:hover {
         }
 
     }
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+    vertical-align: middle;
+    background-color: #FFFFF5;
 }
 
 
