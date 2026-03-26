@@ -341,3 +341,48 @@ li:hover {
 }
 
 
+form {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Noto Serif', serif;
+    color: #FFFFF5;
+}
+
+fieldset {
+    border: 2px solid #FFFFF5;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block; /* Allows label to appear above input */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, 
+select, 
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #FFFFF5;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #FFFFF5;
+    color: #313335;
+    border: none;
+    cursor: pointer; /* Changes cursor to pointer when hovering */
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #D5E5E6
+}
