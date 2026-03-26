@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+	<!-- Declares page as HTML5 Document -->
+<html lang="en">
+	<!-- Root tag with language attribute for accessibility -->
+
+	<!--
+  	Name: Brooke Reutter
+  	Date: March 26th, 2026
+  	Course: Web Design
+  	Description: Contact Page
+	-->
+
+<head>
+	<meta charset="utf-8">
+		<!-- character encoding -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- mobile friendly layout -->
+	<title>Contact Form</title>
+		<!-- page title -->
+	
+	<!-- Main page style -->
+  	 <link rel="stylesheet" href="style.css">
+	<!-- Nav page style -->
+     <link rel="stylesheet" href="nav.css">
+	
+	 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <!-- logo and navigation -->
+     <img src="logo.jpg" alt="Logo" class="logo">
+
+      <nav class="navbar">
+        <ul>
+          <li><a href=about.html>About</a></li>
+          <li><a href=index.html>Home</a></li>
+          <li><a href=projects.html>Projects</a>
+			<ul class="dropdown">
+					<li><a href="#">Photography</a></li>
+					<li><a href="#">Videography</a></li>
+			</ul>
+		  </li>	
+          <li><a href=reflection.html>Reflection</a></li>
+          <li><a href=contact.html>Contact</a></li>
+        </ul>
+     </nav>
+  </header> 
+
+  <form>
+	  <h1>Contact Me</h1>
+
+	<fieldset>
+	  <legend>Your Information</legend>
+
+		<!-- Title -->
+		<div>
+			<label for="title">Title:</label>
+				<select name="Title" id="title" required>
+					<option value="" disabled selected>Select your title</option>
+					<option>Mr.</option>
+					<option>Ms.</option>
+					<option>Mrs.</option>
+					<option>Dr.</option>
+				</select>
+		</div>
+
+		<!-- Full name -->
+		<div>
+			<label for="name">Full Name:</label>
+			<input type="text" name="name" id="name" placeholder="Enter your full name" required/>
+		</div>
+		
+		<!-- Email -->
+		<div>
+			<label for="email">Email Address:</label>
+			<input type="email" name="email" id="email" placeholder="Enter your email address" required/>
+		</div>
+
+		<!-- Extra Select -->
+		<div>
+			<label for="reason">Reason for Contact:</label>
+			<select name="reason" id="reason" required>
+				<option value="" disabled selected>Select a reason</option>
+				<option>General Question</option>
+				<option>Freelance Inquiry</option>
+				<option>Employment Opportunity</option>
+				<option>Other</option>
+			</select>
+		</div>
+
+		<!-- Message -->
+		<div>
+			<label for="message">Message:</label>
+				<textarea name="message" id="message" rows="6" cols="60" maxlength="500" placeholder="Enter your message here..." required></textarea>
+		</div>
+
+		<!-- Submit -->
+		<div>
+			<input type="submit" value="Send Message">
+		</div>
+
+	</fieldset>
+  </form>
+
+
+<footer>
+	<p>Brooke Reutter<br>
+		<img src="phone.png" alt="Phone" class="icon">
+		(573) 550-7973<br>
+		<img src="email.png" alt="Email" class="icon">
+		bkrnnt@umsystem.edu<br>
+		March 26th, 2026</p>
+		<!-- name and current date -->
+</footer>
+</body>
+</html>
