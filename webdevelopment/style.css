@@ -224,9 +224,6 @@ li:hover {
 }
 
 @media print {
-   
-   /*Only apply to about.html*/ 
-   body.about-page { 
 
         /*Page margins*/    
         @page {
