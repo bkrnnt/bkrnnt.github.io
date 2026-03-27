@@ -225,6 +225,9 @@ li:hover {
 
 @media print {
 
+    /*Only apply to about.html*/ 
+   body.about-page { 
+
         /*Page margins*/    
         @page {
             margin: 1in;
@@ -325,7 +328,7 @@ li:hover {
         footer p:nth-of-type(odd) {
             text-indent: 0 !important;
         }
-
+   }
 }
 
 .icon {
