@@ -230,12 +230,6 @@ li:hover {
         @page {
             margin: 1in;
         }
-
-            /*Hides everything by default*/     
-            body.about-page {
-                display: none !important;
-                visibility: hidden !important;
-            }
     
             /*Show following elements*/
             h1,
