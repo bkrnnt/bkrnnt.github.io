@@ -134,8 +134,9 @@ blockquote {
 }
 
 .Resume a {
-    padding: 20px;
+    display: block;
     margin: 20px;
+    padding: 20px;
     border-style: double;
     border-width: 2px;
     border-color: #313335;
@@ -145,6 +146,7 @@ blockquote {
     font-family: 'Noto Serif', serif;
     font-size: 18px;
     text-decoration: none;
+    text-align: center;
 }
 
 ul {
@@ -206,6 +208,7 @@ li:hover {
     display: block; /* Make image a block element to allow for auto centering */
     margin-left: auto; /* Center image */
     margin-right: auto; /* Center image */
+    margin-bottom: 0px;
 }
 
 .video-wrapper {
@@ -223,106 +226,171 @@ li:hover {
     display: block;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.about-page h1 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+  
+}
+
+.about-page h3 {
+    text-align: center;
+}
+
+.about-page main p {
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-page ul {
+    margin: 10px 0 0 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.about-page li {
+    margin-bottom: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.about-page .jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: stretch;
+}
+
+@media screen and (max-width: 768px) {
+    .about-page .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 @media print {
    
+   /*Only apply to about.html*/ 
+   body.about-page { 
 
         /*Page margins*/    
         @page {
             margin: 1in;
         }
-    
-            /*Show following elements*/
-            h1,
-            p.description,
-            ul,
-            li,
-            footer {
-                display: block !important;
-                visibility: visible !important;
-            }
-    
-            /*Hide following elements*/    
-            header,
-            nav,
-            .logo,
-            .headshot,
-            .Resume,
-            .video-wrapper,
-            h3 {
-                display: none !important;
-            }
-    
-            /*Format heading*/
-            h1 {
-                font-family: Georgia, serif !important;
-                color: black !important;
-                font-size: 15pt !important;
-                margin: 0 !important;
-                padding: 0 !important;
-                font-weight: normal !important;
-            }
-    
-            /*Format personal description*/
-            p.description {
-                font-family: Georgia, serif !important;
-                color: black !important;
-                font-size: 11pt !important;
-                line-height: 1.2 !important;
-                margin-top: 15px !important;
-                padding: 0 !important;
-                margin-bottom: 8px !important;
-                font-weight: normal !important;
-            }
-    
-            p.description::first-letter{
-                font-weight: normal !important;
-                font-family: Georgia, serif;
-                font-size: 11pt !important;
-            }
-    
-            p.description:nth-of-type(odd) {
-                text-indent: 0 !important;
-            }
-    
-            /*Format job list*/
-            ul li {
-                font-family: Georgia, serif !important;
-                color: black !important;
-                font-size: 10pt !important;
-                margin-left: 15px !important;
-                line-height: 1.2 !important;
-            }
-    
-            /*Format footer*/
-            footer {
-                font-family: Georgia, serif !important;
-                color: black !important;
-                font-size: 10pt !important;
-                text-indent: 0 !important;
-                font-weight: normal !important;
-            }
-    
-            footer p {
-                font-family: Georgia, serif !important;
-                color: black !important;
-                font-size: 10pt !important;
-                text-indent: 0 !important;
-                font-weight: normal !important;
-            }
-    
-            footer p::first-letter{
-                font-weight: normal !important;
-                font-family: Georgia, serif !important;
-                font-size: 10pt !important;
-    
-            }
-    
-            footer p:nth-of-type(odd) {
-                text-indent: 0 !important;
-            }
 
+        /*Hides everything by default*/     
+        body.about-page {
+            display: none !important;
+            visibility: hidden !important;
+        }
+
+        /*Show following elements*/
+        h1,
+        p.description,
+        ul,
+        li,
+        footer {
+            display: block !important;
+            visibility: visible !important;
+        }
+
+        /*Hide following elements*/    
+        header,
+        nav,
+        .logo,
+        .headshot,
+        .Resume,
+        .video-wrapper,
+        h3 {
+            display: none !important;
+        }
+
+        /*Format heading*/
+        h1 {
+            font-family: Georgia, serif !important;
+            color: black !important;
+            font-size: 15pt !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            font-weight: normal !important;
+        }
+
+        /*Format personal description*/
+        p.description {
+            font-family: Georgia, serif !important;
+            color: black !important;
+            font-size: 11pt !important;
+            line-height: 1.2 !important;
+            margin-top: 15px !important;
+            padding: 0 !important;
+            margin-bottom: 8px !important;
+            font-weight: normal !important;
+        }
+
+        p.description::first-letter{
+            font-weight: normal !important;
+            font-family: Georgia, serif;
+            font-size: 11pt !important;
+        }
+
+        p.description:nth-of-type(odd) {
+            text-indent: 0 !important;
+        }
+
+        /*Format job list*/
+        ul li {
+            font-family: Georgia, serif !important;
+            color: black !important;
+            font-size: 10pt !important;
+            margin-left: 15px !important;
+            line-height: 1.2 !important;
+        }
+
+        /*Format footer*/
+        footer {
+            font-family: Georgia, serif !important;
+            color: black !important;
+            font-size: 10pt !important;
+            text-indent: 0 !important;
+            font-weight: normal !important;
+        }
+
+        footer p {
+            font-family: Georgia, serif !important;
+            color: black !important;
+            font-size: 10pt !important;
+            text-indent: 0 !important;
+            font-weight: normal !important;
+        }
+
+        footer p::first-letter{
+            font-weight: normal !important;
+            font-family: Georgia, serif !important;
+            font-size: 10pt !important;
+
+        }
+
+        footer p:nth-of-type(odd) {
+            text-indent: 0 !important;
+        }
+
+    }
 }
-
 
 .icon {
     width: 32px;
