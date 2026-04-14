@@ -159,4 +159,12 @@ header {
     header {
         flex-wrap: wrap;
     }
+
+    .navbar ul li ul.dropdown {
+        display: none;
+    }
+
+    .mobile-menu ul li ul.dropdown {
+        display: none;
+    }
 }
