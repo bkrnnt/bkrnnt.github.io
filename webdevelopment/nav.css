@@ -1,35 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+}
 
+header {
+    display: flex; /* Use flexbox to arrange logo & nav horizontally */
+    align-items: center; /* Vertically center items in header */
+    background-color: #313335;
+    padding: 10px;
+}
+
+.logo {
+    display: block; /* Makes image behave like block element */
+    width: 80px;
+    height: auto;
+    margin: 0;
+}
+
+/* Hide mobile toggle on desktop */
 #menu-toggle {
     display: none;
 }
 
 .hamburger {
+    display: none;
     font-size: 30px;
     cursor: pointer;
-    display: block;
-    padding: 10px 20px;
     color: #FFFFF5;
     margin-left: auto;
 }
 
+/* Desktop Nav */
 .navbar {
-    display: none;
+    flex: 1;
 }
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #313335;
+    display: flex; /* Displays menu items in a horizontal row */
+    align-items: center;
+}
+
+.navbar > ul > li {
+    position: relative; /* Needed so dropdown menu position is relative to this item */
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 25px;
+    margin: 0;
+    flex: 1; /* Makes each menu item equal width */
+}
+
+.navbar > ul > li > a {
+    text-decoration: none; /* Removes underline */
+    display: block; /* Makes entire menu area clickable */
+    width: 100%;
+    padding: 20px;
+    background-color: #313335;
+    color: #FFFFF5;
+    text-align: center;
+}
+
+.navbar > ul > li > a:hover {
+    background-color: #28292b;
+    text-decoration: underline;
+    text-underline-offset: 5px; /* Moves underline slightly below text */
+}
+
+/* Dropdown (Desktop) */
+.navbar ul > li > ul {
+    position: absolute; /* Positions dropdown relative to parent menu item */
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #313335;
+    width: 200px;
+    text-align: left;
+    z-index: 100; /* Makes sure dropdown apprears above other elements */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul > li > ul > li {
+    width: 100%;
+}
+
+.navbar > ul > li:hover > ul {
+    display: block; /* Reveals dropdown menu */
+}
+
+.navbar ul > li > ul > li > a {
+    display: block; /* Makes entire dropdown clickable */
+    padding: 10px 20px;
+    color: #FFFFF5;
+    text-decoration: none;
+}
+
+.navbar ul > li > ul > li > a:hover {
+    background-color: #28292b;
+    text-decoration: underline;
+}
+
+/* Mobile Navigation */
 
 .mobile-menu {
     display: none;
     background-color: #28292b;
 }
 
+/* Toggle mobile menu */
 #menu-toggle:checked ~ .mobile-menu {
     display: block;
 }
 
+/* Mobile menu layout */
 .mobile-menu ul {
-    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile-menu li a {
@@ -44,115 +136,27 @@
     background-color: #28292b;
 }
 
-.mobile-menu ul li ul {
+/* Mobile dropdown indentation */
+.mobile-menu ul li ul.dropdown {
     padding-left: 20px;
-    background-color: #313335;
 }
 
-header {
-    display: flex;  /* Use flexbox to arrange logo & nav horizontally */
-    align-items: center;  /* Vertically center items in header */
-}
+/* Responsive */
 
+@media (max-width: 768px) {
 
-.logo {
-    display: block; /* Makes image behave like block element */
-    width: 80px;
-    height: auto;
-    margin: 0;
-}
+    /* Hide desktop nav */
+    .navbar {
+        display: none;
+    }
 
-h1{
-    text-align: center;
-    margin: 0;
-}
-
-@media (min-width: 768px) {
-
+    /* Show hamburger */
     .hamburger {
-        display: none;
+        display: block;
+        padding: 10px 20px;
     }
 
-    .mobile-menu {
-        display: none;
-    }
-
-    .mobile-menu ul {
-        display: none;
+    header {
+        flex-wrap: wrap;
     }
 }
-
-
-nav {
-    flex: 1; /* Allows nav to take remaining horizontal space in the header */
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #313335;
-    display: flex; /* Displays menu items in a horizontal row */
-    align-items: center;
-}
-
-nav > ul > li {
-    position: relative; /* Needed so dropdown menu position is relative to this item */
-    text-align: center;
-    font-family: 'Noto Serif', serif;
-    font-size: 25px;
-    margin: 0;
-    flex: 1; /* Makes each menu item equal width */
-}
-
-nav > ul > li > a {
-    text-decoration: none; /* Removes underline */
-    display: block; /* Makes entire menu area clickable */
-    width: 100%;
-    padding: 20px;
-    background-color: #313335;
-    color: #FFFFF5;
-    text-align: center;
-}
-
-nav > ul > li > a:hover {
-    background-color: #28292b;
-    text-decoration: underline;
-    text-underline-offset: 5px; /* Moves underline slightly below text */
-}
-
-nav ul > li > ul {
-    position: absolute; /* Positions dropdown relative to parent menu item */
-    top: 100%;
-    left: 0;
-    display: none;
-    background-color: #313335;
-    width: 200px;
-    text-align: left;
-    z-index: 100; /* Makes sure dropdown apprears above other elements */
-    padding: 0;
-    margin: 0;
-}
-
-nav ul > li > ul > li {
-    width: 100%;
-}
-
-nav > ul > li:hover > ul {
-    display: block; /* Reveals dropdown menu */
-}
-
-nav ul > li > ul > li > a {
-    display: block; /* Makes entire dropdown clickable */
-    padding: 10px 20px;
-    color: #FFFFF5;
-    text-decoration: none;
-}
-
-nav ul > li > ul > li > a:hover {
-    background-color: #28292b;
-    text-decoration: underline;
-}
-
-
-
