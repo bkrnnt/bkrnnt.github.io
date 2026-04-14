@@ -254,13 +254,13 @@ li:hover {
     text-align: center;
 }
 
-.about-page ul {
+.about-page main ul {
     margin: 10px 0 0 20px;
     padding: 10px;
     text-align: center;
 }
 
-.about-page li {
+.about-page main li {
     margin-bottom: 8px;
     padding: 10px;
     text-align: center;
