@@ -27,21 +27,21 @@ header {
     font-size: 30px;
     cursor: pointer;
     color: #FFFFF5;
-    margin-left: auto;
+    margin-left: auto; /* Pushes icon to the right */
 }
 
 /* Desktop Nav */
 .navbar {
-    flex: 1;
+    flex: 1; /* Takes up remaining header space */
 }
 
 .navbar ul {
-    list-style-type: none;
+    list-style-type: none; /* Removes bullet points */
     margin: 0;
     padding: 0;
     background-color: #313335;
     display: flex; /* Displays menu items in a horizontal row */
-    align-items: center;
+    align-items: center; /* Aligns items vertically*/
 }
 
 .navbar > ul > li {
@@ -63,6 +63,7 @@ header {
     text-align: center;
 }
 
+/* Hover effect */
 .navbar > ul > li > a:hover {
     background-color: #28292b;
     text-decoration: underline;
@@ -106,7 +107,7 @@ header {
 /* Mobile Navigation */
 
 .mobile-menu {
-    display: none;
+    display: none; /* Default hidden*/
     background-color: #28292b;
 }
 
@@ -115,7 +116,7 @@ header {
     display: block;
 }
 
-/* Mobile menu layout */
+/* Mobile menu layout (vertical)*/
 .mobile-menu ul {
     list-style: none;
     margin: 0;
@@ -124,6 +125,7 @@ header {
     flex-direction: column;
 }
 
+/* Mobile menu page links*/
 .mobile-menu li a {
     display: block;
     padding: 15px;
@@ -138,7 +140,7 @@ header {
 
 /* Mobile dropdown indentation */
 .mobile-menu ul li ul.dropdown {
-    padding-left: 20px;
+    padding-left: 20px; /* Indents submenu items*/
 }
 
 /* Responsive */
@@ -157,14 +159,14 @@ header {
     }
 
     header {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Allows the header items to wrap on mobile screens*/
     }
 
     .navbar ul li ul.dropdown {
-        display: none;
+        display: none; 
     }
 
     .mobile-menu ul li ul.dropdown {
-        display: none;
+        display: none; /* Hides dropdown menu on mobile*/
     }
 }
