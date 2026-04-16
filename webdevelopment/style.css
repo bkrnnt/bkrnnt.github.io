@@ -446,3 +446,75 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #D5E5E6
 }
+
+.page-header h1 {
+    text-align: center;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.block > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block > div:nth-child(3n) {
+    grid-column: 1 / -1;
+    margin-bottom: 150px;
+}
+
+.block img {
+    max-width: 500px;
+    height: auto;
+    display: block;
+}
+
+.career-grid {
+    text-align: center;
+}
+
+.career-grid p, 
+.career-grid ul,
+.career grid li {
+    font-size: 18pt;
+    font-weight: normal;
+    font-family: 'Noto Serif', serif;
+}
+
+.career-grid li {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .block {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .block > div {
+        align-items: center;
+        text-align: center;
+    }
+
+    .block img {
+        max-width: 90%;
+    }
+
+    .career-grid p,
+    .career-grid ul,
+    .career-grid li {
+        font-size: 16px;
+    }
+}
