@@ -516,5 +516,7 @@ input[type="submit"]:hover {
     .career-grid ul,
     .career-grid li {
         font-size: 16px;
+        font-weight: normal;
+        font-family: 'Noto Serif', serif;
     }
 }
