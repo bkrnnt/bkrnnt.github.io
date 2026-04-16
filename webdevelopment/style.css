@@ -522,7 +522,8 @@ input[type="submit"]:hover {
         font-size: 16px;
     }
 
-    .career-grid p {
+    .block p,
+    .full p {
         font-weight: normal;
         text-indent: none;
     }
