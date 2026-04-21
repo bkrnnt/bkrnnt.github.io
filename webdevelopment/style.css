@@ -527,3 +527,61 @@ input[type="submit"]:hover {
         text-indent: 0;
     }
 }
+
+.job-table {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #FFFFF5;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    figcaption {
+        font-size: 16px;
+    }
+
+    .job-table {
+        overflow-x: auto;
+    }
+}
+
+figcaption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #FFFFF5;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #D5E5E6;
+}
+
+tbody tr:nth-child(1),
+tbody tr:nth-child(3) {
+    background-color: #FFFFF5;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #D5E5E6;
+}
+
+thead {
+    background-color: #D5E5E6;
+    color: #313335;
+}
+
+
