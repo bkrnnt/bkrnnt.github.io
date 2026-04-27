@@ -275,6 +275,14 @@ li:hover {
     align-items: stretch;
 }
 
+/* Custom font from Google Fonts applied to h1 and h2 elements*/
+.reflection-page h1, 
+.reflection-page h2 {
+    font-family: 'Yesteryear', cursive;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
     .about-page .jobs-grid {
         grid-template-columns: 1fr;
