@@ -404,6 +404,7 @@ li:hover {
     width: 32px;
     height: 32px;
     padding: 2px;
+    margin-bottom: 2px;
     vertical-align: middle;
     background-color: #FFFFF5;
     transition: transform 0.3s ease, filter 0.5s ease;
@@ -508,6 +509,15 @@ input[type="submit"]:hover {
 
 .career-grid li {
     padding: 10px;
+}
+
+.full p {
+    margin-top: 0;
+}
+
+.full {
+    border-bottom: 75px solid #D5E5E6;
+    padding-bottom: 50px;
 }
 
 @media (max-width: 768px) {
