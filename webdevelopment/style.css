@@ -221,6 +221,10 @@ li:hover {
     margin-bottom: 0px;
 }
 
+.headshot img:hover {
+    transform: scale(1.1);
+}
+
 .video-wrapper {
     margin: 20px auto !important; /* Center video */
     width: 400px !important;
