@@ -221,8 +221,8 @@ li:hover {
     margin-bottom: 0px;
 }
 
-.headshot img {
-    transform: scale(.3);
+.headshot img:hover {
+    transform: scale(1.3);
 }
 
 .video-wrapper {
