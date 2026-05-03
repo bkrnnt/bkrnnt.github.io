@@ -219,7 +219,10 @@ li:hover {
     margin-left: auto; /* Center image */
     margin-right: auto; /* Center image */
     margin-bottom: 0px;
-    transition: transform 1s ease, filter 2s ease;
+}
+
+.headshot img {
+    transform: scale(.3);
 }
 
 .video-wrapper {
